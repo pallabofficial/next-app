@@ -2,11 +2,14 @@
   "name": "nextapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pallabofficial.github.io/next-app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && gh-pages -d out",
+    "predeploy": "next build"
   },
   "dependencies": {
     "axios": "^1.6.7",
@@ -16,6 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
   }
